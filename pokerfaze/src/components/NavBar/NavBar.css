@@ -1,6 +1,26 @@
 .navbar {
-    display: flex;
+    
     background: #141415;
     height: 80px;
-  
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.start {
+    flex: 3;
+}
+
+.middle {
+    flex: 5;
+}
+
+.end {
+    flex: 4;
 }
