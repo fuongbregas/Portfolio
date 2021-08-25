@@ -1,23 +1,15 @@
 .MyHardwareContainer {
-    
+    background-color: black;
 }
 
 .MyHardwarePart {
-    display: flex;
     min-width: 100%;
     min-width: 100%;
     
 }
 
+.MyHardwareDescription{
 
-
-
-.MyHadwareBg {
-    
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    
 }
+
+
