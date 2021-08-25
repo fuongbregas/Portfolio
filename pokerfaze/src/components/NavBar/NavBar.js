@@ -2,9 +2,10 @@ import './NavBar.css';
 import React from 'react';
 import NavBarLogo from './NavBarLogo/NavBarLogo';
 import NavBarLink from './NavBarLink/NavBarLink';
-const NavBar = () => {
+import NavBar from 'react-bootstrap/Navbar'
+const NavigationBar = () => {
     return (
-        <nav className = 'navbar'>
+        <NavBar className = 'navbar'>
             <div className = 'navbarContainer'>
                 <div className = 'start'>
                     <NavBarLogo/>
@@ -17,8 +18,8 @@ const NavBar = () => {
 
                 </div>
             </div>
-        </nav>
+        </NavBar>
     );
 }
 
-export default NavBar;
+export default NavigationBar;

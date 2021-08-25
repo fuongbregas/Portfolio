@@ -7,10 +7,8 @@
 .NavBarLink{
     list-style: none;
     text-decoration: none;
-    height: 60px;
+    height: 80px;
 }
-
-
 
 .NavBarItem {
     color: white;

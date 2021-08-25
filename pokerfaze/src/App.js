@@ -4,17 +4,18 @@ import './App.css';
 
 import Home from './pages/Home/Home';
 import About from './pages/About/About'
-import NavBar from './components/NavBar/NavBar'
+import MyHardware from './pages/My Hardware/MyHardware';
+import NavigationBar from './components/NavBar/NavBar'
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar/>
+        <NavigationBar/>
 
         <Switch>
           <Route exact path='/'><Home /></Route>
-          <Route exact path='/myhardware'><About/></Route>
+          <Route exact path='/myhardware'><MyHardware/></Route>
 
           
         </Switch>

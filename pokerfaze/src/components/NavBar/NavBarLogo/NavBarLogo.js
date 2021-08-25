@@ -1,10 +1,11 @@
 import './NavBarLogo.css';
 import logo from './poker.png';
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const NavBarLogo = () => {
     return (
-        <div className = 'navBarLogoContainer'>
+        <Link className = 'navBarLogoContainer' to = '/'>
             <img className = 'pokerLogo'
                 src = {logo}
                 alt = ''
@@ -12,7 +13,7 @@ const NavBarLogo = () => {
             <span className = 'siteName'>
                 Poker FaZe
             </span>
-        </div>
+        </Link>
         
     );
 }
