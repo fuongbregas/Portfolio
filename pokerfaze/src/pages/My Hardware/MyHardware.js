@@ -12,7 +12,9 @@ const MyHardware = () => {
             <section className = 'MyHardwarePart'>
                 
                 <BackgroundVideo videoSource = {vid9900}>
-                    
+                    <div className = 'MyHardwareDescription'>
+                        <span>My main gaming and editing machine is powered by an Intel i9-9900k.</span>
+                    </div>
                 </BackgroundVideo>
                 
             </section>
