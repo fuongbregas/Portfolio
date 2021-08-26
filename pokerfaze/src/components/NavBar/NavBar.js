@@ -5,7 +5,7 @@ import NavBarLink from './NavBarLink/NavBarLink';
 import NavBar from 'react-bootstrap/Navbar'
 const NavigationBar = () => {
     return (
-        <NavBar className = 'navbar'>
+        <NavBar className = 'navbar' >
             <div className = 'navbarContainer'>
                 <div className = 'start'>
                     <NavBarLogo/>

@@ -1,5 +1,6 @@
 .MyHardwareContainer {
     background-color: black;
+    
 }
 
 .MyHardwarePart {
@@ -7,8 +8,19 @@
     min-width: 100%;
 }
 
-.MyHardwareDescription{
+.DescriptionContainer{
     position: absolute;
+    
+    bottom: 1px;
+    width: 100vw;
+    opacity: 70%;
+}
+
+.Description{
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    font-weight: 400;
 }
 
 

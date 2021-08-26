@@ -12,8 +12,11 @@ const MyHardware = () => {
             <section className = 'MyHardwarePart'>
                 
                 <BackgroundVideo videoSource = {vid9900}>
-                    <div className = 'MyHardwareDescription'>
-                        <span>My main gaming and editing machine is powered by an Intel i9-9900k.</span>
+                    <div className = 'DescriptionContainer'>
+                        <h1 className = 'Description'>
+                            My main gaming and editing machine is powered by an Intel i9-9900k.<br/>
+                            Because this thing can run very hot, the CPU has been delidded for direct-die cooling.
+                        </h1>
                     </div>
                 </BackgroundVideo>
                 
