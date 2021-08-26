@@ -1,26 +1,19 @@
 .NavBarLinkContainer {
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 
 .NavBarLink{
     list-style: none;
     text-decoration: none;
-    height: 80px;
-}
-
-.NavBarItem {
+    padding: 0 1rem;
     color: white;
-    align-self: center;
-    cursor: pointer;
     font-size: 30px;
-    align-self: center;
-    width: 100%;
-    margin-left: 100px;
-    margin-right: 100px
+    padding-top: 18px;
 }
 
-.NavBarItem:hover {
+.NavBarLink:hover {
     color: cyan;
 }
 

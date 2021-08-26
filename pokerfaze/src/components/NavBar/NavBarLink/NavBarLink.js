@@ -4,16 +4,15 @@ import {Link} from 'react-router-dom'
 
 const NavBarLink = () => {
     return (
-        <ul className = 'NavBarLinkContainer'>
+        <div className = 'NavBarLinkContainer'>
             <Link className = 'NavBarLink' to = '/myhardware'>
-                <span className = 'NavBarItem' >My Hardware</span>
-                
+                My Hardware
             </Link>
             <Link className = 'NavBarLink' to = '/'>
-                <span className = 'NavBarItem' >Contact Me</span>
+                Contact Me
             </Link>
             
-        </ul>
+        </div>
     );
 }
 

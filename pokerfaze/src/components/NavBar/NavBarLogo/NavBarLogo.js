@@ -5,15 +5,23 @@ import {Link} from 'react-router-dom'
 
 const NavBarLogo = () => {
     return (
-        <Link className = 'navBarLogoContainer' to = '/'>
-            <img className = 'pokerLogo'
-                src = {logo}
-                alt = ''
-            />
-            <span className = 'siteName'>
-                Poker FaZe
-            </span>
-        </Link>
+       
+            <div className = 'navBarLogoContainer'>
+                <Link className = 'LogoLink' to = '/'>
+                    <div className = 'linkContainer'>
+                        <img className = 'pokerLogo'
+                            src = {logo}
+                            alt = ''
+                        />
+                        <span className = 'siteName'>
+                            Poker FaZe
+                        </span>
+                    </div>
+                    
+                </Link>
+            </div>
+            
+        
         
     );
 }

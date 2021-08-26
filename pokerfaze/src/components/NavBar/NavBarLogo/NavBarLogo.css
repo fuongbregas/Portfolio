@@ -1,25 +1,30 @@
-.navBarLogoContainer {
-    display: flex;
-    align-items: left;
-    margin-top: 10px;
-    margin-left: 20px;
-    width: 100%;
-    cursor: pointer;
+
+
+.LogoLink{
     text-decoration: none;
+    width: 55%
 }
 
+.navBarLogoContainer {
+    display: flex;
+    vertical-align: middle;
+}
+.linkContainer {
+    display: flex;
+}
 .pokerLogo {
+    padding-top: 10px;
+    height: 55px;
     width: 100px;
-    height: 53px;
-    
+    cursor: pointer;
 }
 
 .siteName {
     font-size: 30px;
     color: white;
-    
-    margin-left: -10px;
-    align-self: center;
+    cursor: pointer;
+    height: 80px;
+    padding-top: 20px;
 }
 
 .siteName:hover {
