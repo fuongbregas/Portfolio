@@ -1,6 +1,5 @@
 .NavBarLinkContainer {
     display: flex;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -16,6 +15,9 @@
     cursor: pointer;
     font-size: 30px;
     align-self: center;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px
 }
 
 .NavBarItem:hover {
