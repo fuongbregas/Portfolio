@@ -8,7 +8,7 @@ const NavBarLink = () => {
             <Link className = 'NavBarLink' to = '/myhardware'>
                 My Hardware
             </Link>
-            <Link className = 'NavBarLink' to = '/'>
+            <Link className = 'NavBarLink' to = '/contact'>
                 Contact Me
             </Link>
             
