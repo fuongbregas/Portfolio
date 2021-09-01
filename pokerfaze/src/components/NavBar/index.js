@@ -1,42 +1,70 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './NavBarLogo/poker.png'
 import {
     Nav,
+    NavContainer,
+    NavLogoContainer,
+    NavLogo,
+    NavWebName,
     NavLink,
+    NavLinkName,
     Bars,
     NavMenu,
+    NavItem,
     NavSocial
 } from './NavBarElements';
 
 
 const NavigationBar = () => {
-    
+    const [isOpen, setisOpen] = useState(false);
+
+    const toggle = () => {
+      setisOpen(!isOpen);
+    }
+
     return (
-        <>
-            <Nav>
-                <NavLink to = '/'>
-                    <img 
-                        src= {logo}
-                        alt = ''
-                    />
-                    <h1>Poker FaZe</h1>
-                </NavLink>
+        <Nav>
+            <NavContainer>
+                <NavLogoContainer>
+                    <NavLogo to = '/'>
+                        <img 
+                            src= {logo}
+                            alt = ''
+                        />
+                        <NavWebName>
+                            Poker FaZe
+                        </NavWebName>
+                        
+                    </NavLogo>
+                </NavLogoContainer>
+                
 
                 <Bars/>
                 <NavMenu>
-                    <NavLink to = '/myhardware' activeStyle>
-                        My Hardware
-                    </NavLink>
-                    <NavLink to = '/contact' activeStyle>
-                        Contact Me
-                    </NavLink>
+                    <NavItem>
+                        <NavLink to = '/myhardware' activeStyle>
+                            <NavLinkName>
+                                My Hardware
+                            </NavLinkName>
+                        </NavLink>
+                    </NavItem>
+                    
+                    <NavItem>
+                        <NavLink to = '/contact' activeStyle>
+                            <NavLinkName>
+                                Contact Me
+                            </NavLinkName>
+                            
+                        </NavLink>
+                    </NavItem>
+                    
                 </NavMenu>
 
                 <NavSocial>
 
                 </NavSocial>
-            </Nav>
-        </>
+            </NavContainer>
+        </Nav>
     );
 }
     

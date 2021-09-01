@@ -3,26 +3,80 @@ import {NavLink as Link} from 'react-router-dom';
 import {FaBars} from 'react-icons/fa';
 
 export const Nav = styled.nav`
-    background: #000;
+    background: #141415;
     height: 80px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    @media screen and (max-width: 960px) {
+        transition: 0.8s all ease;
+    }
+`
+
+export const NavContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem calc((100vw-1000px) / 2);
-    z-index: 10;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
+`
+export const NavLogoContainer = styled.div`
+    
+    padding-top: 10px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    
+`
+
+export const NavLogo = styled(Link)`
+    color: #fff;
+    justify-self: flex-start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    text-decoration: none;
+
+    &:hover {
+        color: #0084ff;
+    }
+`
+
+export const NavWebName = styled.h1`
+    font-weight: 100;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    &:hover {
+      color: #0084ff;
+    }
 `
 
 export const NavLink = styled(Link)`
-    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
-    cursor: pointer;
     height: 100%;
+`
+export const NavLinkName = styled.span`
+    color: white;
     font-size: 20px;
 
-    &.hover {
-        color: #15cdfc;
+    &:hover {
+        color: #0084ff;
     }
 `
 
@@ -41,14 +95,18 @@ export const Bars = styled(FaBars)`
     }
 `
 
-export const NavMenu = styled.div`
+export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
     margin-right: -24px;
-
+    text-align: center;
     @media screen and (max-width: 768px){
         display: none;
     }
+`
+
+export const NavItem = styled.li`
+    height: 80px;
 `
 
 export const NavSocial = styled.div`

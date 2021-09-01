@@ -10,22 +10,32 @@ const MyHardware = () => {
     return (
         <div className= 'MyHardwareContainer'>
             <section className = 'MyHardwarePart'>
+                <div className = 'MyHardwareWarapper'>
+                    <BackgroundVideo videoSource = {vid9900}>
+                        <div className = 'DescriptionContainer'>
+                            <h1 className = 'Description'>
+                                My main gaming and editing machine is powered by an Intel i9-9900k.<br/>
+                                Because this thing can run very hot, the CPU has been delidded for direct-die cooling.
+                            </h1>
+                        </div>
+                    </BackgroundVideo>
+                </div>
                 
-                <BackgroundVideo videoSource = {vid9900}>
-                    <div className = 'DescriptionContainer'>
-                        <h1 className = 'Description'>
-                            My main gaming and editing machine is powered by an Intel i9-9900k.<br/>
-                            Because this thing can run very hot, the CPU has been delidded for direct-die cooling.
-                        </h1>
-                    </div>
-                </BackgroundVideo>
                 
             </section>
 
             <section className= 'MyHardwarePart'>
-                <BackgroundVideo videoSource = {vid3090}>
-
-                </BackgroundVideo>
+                <div className = 'MyHardwareWarapper'>
+                    <BackgroundVideo videoSource = {vid3090}>
+                        <div className = 'DescriptionContainer'>
+                            <h1 className = 'Description'>
+                                I edit videos a lot so I need a good graphic card.<br/>
+                                With 24GB VRAM, the Asus TUF RTX 3090 is the perfect on for the job. And game.
+                            </h1>
+                        </div>
+                    </BackgroundVideo>
+                </div>
+                
             </section>
 
             <section className = 'MyHardwarePart'>
