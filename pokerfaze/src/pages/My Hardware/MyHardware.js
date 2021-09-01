@@ -30,7 +30,7 @@ const MyHardware = () => {
                         <div className = 'DescriptionContainer'>
                             <h1 className = 'Description'>
                                 I edit videos a lot so I need a good graphic card.<br/>
-                                With 24GB VRAM, the Asus TUF RTX 3090 is the perfect on for the job. And game.
+                                With 24GB VRAM, the Asus TUF RTX 3090 is the perfect for the job. And game.
                             </h1>
                         </div>
                     </BackgroundVideo>
@@ -39,15 +39,29 @@ const MyHardware = () => {
             </section>
 
             <section className = 'MyHardwarePart'>
-                <BackgroundVideo videoSource = {vid3700X}>
-
-                </BackgroundVideo>
+                <div className = 'MyHardwareWarapper'>
+                    <BackgroundVideo videoSource = {vid3700X}>
+                        <div className = 'DescriptionContainer'>
+                            <h1 className = 'Description'>
+                                I used a Ryzen 7 3700X for building SFFPCs due to its low TDP.<br/>
+                                However, it isn't so good in gaming so I'm looking for something better in the future.
+                            </h1>
+                        </div>
+                    </BackgroundVideo>
+                </div>
             </section>
             
             <section className= 'MyHardwarePart'>
-                <BackgroundVideo videoSource = {vid2070}>
-
-                </BackgroundVideo>
+                <div className = 'MyHardwareWarapper'>
+                        <BackgroundVideo videoSource = {vid2070}>
+                            <div className = 'DescriptionContainer'>
+                                <h1 className = 'Description'>
+                                    For SFF PCs, the rare Gigabyte RTX 2070 mini is a dream card.<br/>
+                                    I wish NVIDIA will bring back the USB-C port because it can be used with my XG17 portable monitor.
+                                </h1>
+                            </div>
+                        </BackgroundVideo>
+                </div>
             </section>
         </div>
     );
