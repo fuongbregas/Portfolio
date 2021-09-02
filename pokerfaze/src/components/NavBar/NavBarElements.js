@@ -47,9 +47,7 @@ export const NavLogo = styled(Link)`
     margin-left: 24px;
     text-decoration: none;
 
-    &:hover {
-        color: #0084ff;
-    }
+    
 `
 
 export const NavWebName = styled.h1`
@@ -61,6 +59,7 @@ export const NavWebName = styled.h1`
 
     &:hover {
       color: #0084ff;
+      transition: 0.4s; 
     }
 `
 
@@ -77,6 +76,7 @@ export const NavLinkName = styled.span`
 
     &:hover {
         color: #0084ff;
+        transition: 0.4s; 
     }
 `
 
