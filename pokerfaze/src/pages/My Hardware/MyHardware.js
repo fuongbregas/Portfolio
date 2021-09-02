@@ -9,10 +9,7 @@ import vid2070 from '../../components/Web Videos/2070.mp4'
 
 var Button = Scroll.Button;
 
-/*
- * 
- * 
-*/
+
 
 const MyHardware = () => {
     return (
@@ -75,10 +72,10 @@ const MyHardware = () => {
             </div>
 
             <div className = 'ScrollButton'>
-                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'A' type = 'submit' value = ' a' smooth = {true} offset = {-80} duration = {500}/>
+                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'A' type = 'submit' value = ' ' smooth = {'easeInOutQuint'} offset = {-80} duration = {500}/>
                 <Button activeClass = 'active' className = 'ScrollIndicator' to = 'B' type = 'submit' value = ' ' smooth = {true} offset = {-80} duration = {500}/>
                 <Button activeClass = 'active' className = 'ScrollIndicator' to = 'C' type = 'submit' value = ' ' smooth = {true} offset = {-80} duration = {500}/>
-                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'D' type = 'submit' value = ' ' smooth = {true} offset = {-80} duration = {500}/>
+                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'D' type = 'submit' value = ' ' smooth = {'easeInOutQuad'} offset = {-80} duration = {500}/>
             </div>
         </div>
     );
