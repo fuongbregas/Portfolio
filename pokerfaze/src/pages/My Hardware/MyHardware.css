@@ -1,6 +1,22 @@
 .MyHardwareContainer {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.ScrollButton{
     
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    justify-content: space-between;
+}
+
+.ScrollIndicator{
+    display: block;
+    margin-top: 20px;
 }
 
 .MyHardwarePart {
@@ -49,5 +65,11 @@
     .Description {
         font-size: 17px;
         font-weight: 100;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .ScrollButton {
+        display: none;
     }
 }
