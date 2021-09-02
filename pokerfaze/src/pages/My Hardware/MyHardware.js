@@ -9,6 +9,11 @@ import vid2070 from '../../components/Web Videos/2070.mp4'
 
 var Button = Scroll.Button;
 
+/*
+ * 
+ * 
+*/
+
 const MyHardware = () => {
     return (
         <div className= 'MyHardwareContainer'>
@@ -70,10 +75,10 @@ const MyHardware = () => {
             </div>
 
             <div className = 'ScrollButton'>
-                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'A' type = 'submit' value = 'A' smooth = {true} offset = {-80} duration = {500}/>
-                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'B' type = 'submit' value = 'B' smooth = {true} offset = {-80} duration = {500}/>
-                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'C' type = 'submit' value = 'C' smooth = {true} offset = {-80} duration = {500}/>
-                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'D' type = 'submit' value = 'D' smooth = {true} offset = {-80} duration = {500}/>
+                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'A' type = 'submit' value = ' a' smooth = {true} offset = {-80} duration = {500}/>
+                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'B' type = 'submit' value = ' ' smooth = {true} offset = {-80} duration = {500}/>
+                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'C' type = 'submit' value = ' ' smooth = {true} offset = {-80} duration = {500}/>
+                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'D' type = 'submit' value = ' ' smooth = {true} offset = {-80} duration = {500}/>
             </div>
         </div>
     );
