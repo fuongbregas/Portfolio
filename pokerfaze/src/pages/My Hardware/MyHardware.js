@@ -33,8 +33,8 @@ const MyHardware = () => {
                         <BackgroundVideo videoSource = {vid3090}>
                             <div className = 'DescriptionContainer'>
                                 <h1 className = 'Description'>
-                                    I edit videos a lot so I need a good graphic card.<br/>
-                                    With 24GB VRAM, the Asus TUF RTX 3090 is the perfect for the job. And game.
+                                    I edit videos a lot so I grabbed a 3090 before the mining boom.<br/>
+                                    With 24GB VRAM, the Asus TUF RTX 3090 OC is the perfect choice for the job. And game.
                                 </h1>
                             </div>
                         </BackgroundVideo>
@@ -70,10 +70,10 @@ const MyHardware = () => {
             </div>
 
             <div className = 'ScrollButton'>
-                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'A' type = 'submit' value = 'A' smooth = {true} duration = {500}/>
-                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'B' type = 'submit' value = 'B' smooth = {true} duration = {500}/>
-                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'C' type = 'submit' value = 'C' smooth = {true} duration = {500}/>
-                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'D' type = 'submit' value = 'D' smooth = {true} duration = {500}/>
+                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'A' type = 'submit' value = 'A' smooth = {true} offset = {-80} duration = {500}/>
+                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'B' type = 'submit' value = 'B' smooth = {true} offset = {-80} duration = {500}/>
+                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'C' type = 'submit' value = 'C' smooth = {true} offset = {-80} duration = {500}/>
+                <Button activeClass = 'active' className = 'ScrollIndicator' to = 'D' type = 'submit' value = 'D' smooth = {true} offset = {-80} duration = {500}/>
             </div>
         </div>
     );

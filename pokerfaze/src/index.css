@@ -12,6 +12,12 @@ body {
   width: 0;
 }
 
+@-moz-document url-prefix() {
+  html {
+    scrollbar-width: none;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
