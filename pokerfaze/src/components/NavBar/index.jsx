@@ -42,7 +42,7 @@ const NavigationBar = () => {
                 <Bars/>
                 <NavMenu>
                     <NavItem>
-                        <NavLink to = '/myhardware' activeStyle>
+                        <NavLink to = '/myhardware' >
                             <NavLinkName>
                                 My Hardware
                             </NavLinkName>
@@ -50,7 +50,7 @@ const NavigationBar = () => {
                     </NavItem>
                     
                     <NavItem>
-                        <NavLink to = '/contact' activeStyle>
+                        <NavLink to = '/contact' >
                             <NavLinkName>
                                 Contact Me
                             </NavLinkName>
