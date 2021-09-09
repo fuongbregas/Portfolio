@@ -30,11 +30,11 @@ export const NavContainer = styled.div`
 `
 export const NavLogoContainer = styled.div`
     
-    padding-top: 10px;
-    height: 80px;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    
+    display: flex;
+    flex-direction: row;
 `
 
 export const NavLogo = styled(Link)`
@@ -52,7 +52,7 @@ export const NavLogo = styled(Link)`
 
 export const NavWebName = styled.h1`
     font-weight: 100;
-
+    padding-top: 10px;
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -64,15 +64,17 @@ export const NavWebName = styled.h1`
 `
 
 export const NavLink = styled(Link)`
-    display: flex;
-    align-items: center;
+    color: white;
     text-decoration: none;
-    padding: 0 1rem;
+    overflow: hidden;
     height: 100%;
+    box-sizing: border-box;
 `
+
 export const NavLinkName = styled.span`
     color: white;
     font-size: 20px;
+    padding-top: 37px;
 
     &:hover {
         color: #0084ff;
@@ -98,16 +100,28 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-right: -24px;
     text-align: center;
     list-style: none;
+
+    height: 100%;
+    box-sizing: border-box;
     @media screen and (max-width: 768px){
         display: none;
     }
 `
 
+export const NavLinkItem = styled(Link)`
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+`
+
 export const NavItem = styled.li`
-    height: 80px;
+    height: 100px;
+    align-items: center;
 `
 
 export const NavSocial = styled.div`

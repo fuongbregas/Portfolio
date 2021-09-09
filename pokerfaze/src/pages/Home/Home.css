@@ -22,11 +22,16 @@
     border-radius: 50%;
     border: solid grey;
     border-width: 1px;
+    transition: transform .2s;
 }
 
+.profilePic:hover {
+    
+    transform: scale(1.2);
+}
 
 .aboutMe { 
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-items: center;

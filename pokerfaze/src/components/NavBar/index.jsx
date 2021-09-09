@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import logo from './NavBarLogo/poker.png'
 import {
     Nav,
@@ -11,6 +12,7 @@ import {
     Bars,
     NavMenu,
     NavItem,
+    NavLinkItem,
     NavSocial
 } from './NavBarElements';
 
@@ -26,36 +28,42 @@ const NavigationBar = () => {
         <Nav>
             <NavContainer>
                 <NavLogoContainer>
+                    
                     <NavLogo to = '/'>
                         <img 
-                            src= {logo}
-                            alt = ''
+                                src= {logo}
+                                alt = ''
                         />
+                       
+                        
+                    </NavLogo>
+                    <NavLink to = '/'>
+                        
                         <NavWebName>
                             Poker FaZe
                         </NavWebName>
                         
-                    </NavLogo>
+                    </NavLink>
                 </NavLogoContainer>
                 
 
                 <Bars/>
                 <NavMenu>
                     <NavItem>
-                        <NavLink to = '/myhardware' >
+                        <NavLinkItem to = '/myhardware' >
                             <NavLinkName>
                                 My Hardware
                             </NavLinkName>
-                        </NavLink>
+                        </NavLinkItem>
                     </NavItem>
                     
                     <NavItem>
-                        <NavLink to = '/contact' >
+                        <NavLinkItem to = '/contact' >
                             <NavLinkName>
                                 Contact Me
                             </NavLinkName>
                             
-                        </NavLink>
+                        </NavLinkItem>
                     </NavItem>
                     
                 </NavMenu>
