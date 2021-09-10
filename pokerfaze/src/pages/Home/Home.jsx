@@ -24,9 +24,9 @@ const Home = () => {
                 <div className = "aboutMe">
                     <h1>My name is Phuong Tran<br/></h1>
                     <span>
-                        Full Stack Developer<br/>
-                        Content Creator<br/>
-                        Gamer<br/>
+                        ★ Full Stack Developer ★<br/>
+                        ♚ Content Creator ♚<br/>
+                        ☠ Gamer ☠<br/>
                     </span>
                     <p>
                         I got my BS degree of Computer Science in 2018 at San Jose State University.<br/>

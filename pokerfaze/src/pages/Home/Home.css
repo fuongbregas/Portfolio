@@ -1,8 +1,9 @@
 .home {
-    box-sizing: border-box;
-    height: 100vw;
-    width: 100vw;
-    background-color: grey;
+    
+    background-image: url("background.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;   
 }
 
 .homeWrapper{
@@ -40,16 +41,19 @@
 }
 
 h1 {
+    color: white;
     font-size: 50px;
     margin-bottom: 15px;
 }
 
 span {
+    color: white;
     font-size: 30px;
     margin-bottom: 15px;
 }
 
 p {
+    color: white;
     font-size: 20px;
     margin-bottom: 15px;
 }
