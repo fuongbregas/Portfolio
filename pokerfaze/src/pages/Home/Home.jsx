@@ -7,6 +7,7 @@ import profile2 from './Profile Photos/profile2.jpg';
 import slide1 from './Photos/1.png';
 import slide2 from './Photos/2.png';
 import slide3 from './Photos/3.png';
+import slide4 from './Photos/4.png';
 import {Carousel} from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './style/overrides.css';
@@ -15,7 +16,7 @@ const items = [
     {id: 1, slide : slide1},
     {id: 2, slide : slide2},
     {id: 3, slide : slide3},
-    
+    {id: 4, slide : slide4},
 ]
 const hover = () => (e) => {
     e.preventDefault();
@@ -47,8 +48,8 @@ const Home = () => {
                     </p>
                 </div>
                 <div>
-                    <Carousel showThumbs = {false} autoPlay = {true} infiniteLoop = {true} showStatus = {false} 
-                              dynamicHeight= {false} interval={6000}>
+                    <Carousel showThumbs = {false} autoPlay = {true} infiniteLoop = {true} showStatus = {false}
+                              stopOnHover = {true} interval={4500} useKeyboardArrows = {true}>
                         {items.map(item => 
                             <div key={item.id}>
                                 <img class = 'slideImages' src= {item.slide}/>
