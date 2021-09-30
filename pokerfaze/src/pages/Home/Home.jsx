@@ -1,9 +1,22 @@
 import './Home.css';
 import React from 'react';
 
-import profile1 from './profile1.png';
-import profile2 from './profile2.jpg';
+import profile1 from './Profile Photos/profile1.png';
+import profile2 from './Profile Photos/profile2.jpg';
 
+import slide1 from './Photos/1.png';
+import slide2 from './Photos/2.png';
+import slide3 from './Photos/3.png';
+import {Carousel} from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import './style/overrides.css';
+
+const items = [
+    {id: 1, slide : slide1},
+    {id: 2, slide : slide2},
+    {id: 3, slide : slide3},
+    
+]
 const hover = () => (e) => {
     e.preventDefault();
     e.currentTarget.src = profile2;
@@ -32,6 +45,15 @@ const Home = () => {
                         I got my BS degree of Computer Science in 2018 at San Jose State University.<br/>
                         I am currently pursuing my MS degree in Software Engineering at San Jose State, again.<br/>
                     </p>
+                </div>
+                <div>
+                    <Carousel showThumbs = {false} autoPlay = {true} infiniteLoop = {true} showStatus = {false} 
+                              dynamicHeight= {false} interval={6000}>
+                        {items.map(item => 
+                            <div key={item.id}>
+                                <img class = 'slideImages' src= {item.slide}/>
+                            </div>)}
+                    </Carousel>
                 </div>
                 
             </div>
