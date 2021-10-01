@@ -20,7 +20,7 @@ const Slideshow = () => {
                               stopOnHover = {true} interval={4500} useKeyboardArrows = {true}>
                         {items.map(item => 
                             <div key={item.id}>
-                                <img class = 'slideImages' src= {item.slide}/>
+                                <img className = 'slideImages' src= {item.slide}/>
                             </div>)}
         </Carousel>
     );

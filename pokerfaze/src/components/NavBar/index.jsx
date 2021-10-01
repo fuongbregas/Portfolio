@@ -60,14 +60,11 @@ const NavigationBar = () => {
                     <NavItem>
                         <NavLinkItem to = '/contact' >
                             <NavLinkName>
-                                Contact Me
+                                About Me
                             </NavLinkName>
-                            
                         </NavLinkItem>
                     </NavItem>
-                    
                 </NavMenu>
-
                 <NavSocial>
 
                 </NavSocial>
@@ -75,7 +72,5 @@ const NavigationBar = () => {
         </Nav>
     );
 }
-    
-
 
 export default NavigationBar;
