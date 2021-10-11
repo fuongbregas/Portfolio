@@ -1,0 +1,21 @@
+
+.skill {
+    height: 500px;
+}
+.title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.description {
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+.description_text{
+    
+}

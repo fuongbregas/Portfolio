@@ -1,0 +1,7 @@
+.about {
+    display: flex;
+    height: 91.8vh;
+    background-color: rgb(88, 88, 87);
+    justify-content: center;
+    align-items: center;
+}

@@ -1,13 +1,15 @@
 import './About Me.css';
 import React from 'react';
-import SubCounter from '../../components/Sub Counter/Sub Counter';
-
+import EducationSlide from '../../components/Education Slideshow/Education Slideshow';
 const AboutMe = () => {
     
+    
+
     return (
         <div className="about">
-            <SubCounter/>
+            <EducationSlide/>            
         </div>
+        
     );
 }
 

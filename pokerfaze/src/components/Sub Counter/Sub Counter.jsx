@@ -15,7 +15,7 @@ const SubCounter = () => {
                 // (this is what we want = 3.26k subscribers) = (.+?)
                 // (?="}},"simpleText":")
                 const regex = '(?<="subscriberCountText":{"accessibility":{"accessibilityData":{"label":")(.+?)(?="}},"simpleText":")';
-                const result = text.match(regex)[0];
+                const result = text.match(regex)[0]; // Get the first result
                 setSubNumberString(result);
             }
             catch (error) {
@@ -27,7 +27,8 @@ const SubCounter = () => {
     
     return (
         <>
-            <h1>{subNumberString}</h1>
+            <h1>Live YouTube subscribers of channel Poker FaZe:</h1>
+            <p className="sub_total">{subNumberString}</p>
         </>
     );
 }
