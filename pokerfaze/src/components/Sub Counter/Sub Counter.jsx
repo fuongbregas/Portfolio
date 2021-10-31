@@ -7,7 +7,7 @@ const SubCounter = () => {
 
     useEffect (() => {
         const getSubCount = async () => {
-            const URL = 'https://corsanywhere.herokuapp.com/https://www.youtube.com/c/PokerFaceYoutube/about';
+            const URL = 'https://salty-beach-83596.herokuapp.com/https://www.youtube.com/c/PokerFaceYoutube/about';
             try {
                 const response = await axios.get (URL);
                 const text = response.data;
