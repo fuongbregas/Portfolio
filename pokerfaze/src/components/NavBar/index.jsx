@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react';
 import logo from './NavBarLogo/poker.png'
 import {
     Nav,
@@ -18,11 +17,6 @@ import {
 
 
 const NavigationBar = () => {
-    const [isOpen, setisOpen] = useState(false);
-
-    const toggle = () => {
-      setisOpen(!isOpen);
-    }
 
     return (
         <Nav>

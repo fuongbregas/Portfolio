@@ -1,5 +1,6 @@
 import './Sub Counter.css';
 import React, {useState, useEffect} from 'react';
+import {CircularProgress} from '@material-ui/core';
 import axios from 'axios';
 
 const SubCounter = () => {
@@ -28,7 +29,11 @@ const SubCounter = () => {
     return (
         <>
             <h1>Live YouTube subscribers of channel Poker FaZe:</h1>
-            <p className="sub_total">{subNumberString}</p>
+            {
+                subNumberString === '' ? <CircularProgress style={{'color': 'white'}}/>
+                : <p className="sub_total">{subNumberString}</p>
+            }
+            
         </>
     );
 }

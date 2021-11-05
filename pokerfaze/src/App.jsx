@@ -1,12 +1,11 @@
 
-import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 
 import Home from './pages/Home/Home';
 import AboutMe from './pages/About Me/About Me'
 import MyHardware from './pages/My Hardware/MyHardware';
 import NavigationBar from './components/NavBar';
-import ProfileImageChanger from './pages/ProfileImageChanger/index';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
           <Route exact path='/'><Home/></Route>
           <Route exact path='/contact'><AboutMe/></Route>
           <Route exact path='/myhardware'><MyHardware/></Route>
-          <Route exact path='/test'><ProfileImageChanger/></Route>
           
         </Switch>
 
